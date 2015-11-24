@@ -26,6 +26,7 @@ git config --list        查看配置列表
     1. 创建本地 ssh ： ssh-keygen -t rsa -C "Github 的注册邮箱"
     2. 在 Github 中添加这个 sshkey ： 
         复制  C:\Documents and Settings\Administrator\.ssh\id_rsa.pub 文件中的内容；
+AAAAB3NzaC1yc2EAAAADAQABAAABAQC+8yWYMPM7Vhr7L9UU5enfVwDRj3FrjInpLUrKRgD3+boJQlgH1CNlGDcUrcxw5tfaBzGm0T9LEhQVtKZGJ5mIgt044451IKVND5Rm+wZGC8QNYrSLRxX4xX7nlOkkpoeS2Us2lPERJzSKKloBtaJs+znjb3cyYAf9LoVRPlit8cWPvxteuOHH6y7M7AKUQMX3Wd/1bVijvUMFTQ2Qt4JLdxZ5MDFlIGtzJqXbZHLI+vnqyOv6a6oMsGlxSObihX7xcyHc1Dv5MZMMfb2qBNrA/nYqtjK0x0u3FVbyJI1l0U847diDl5MbLaNgpP9GP5SkGzDcNktQlcJRzTru+EJJ wcf873455992@sina.com
         登录 Github --> Account Setting  --> SSH-KEY --> Add SSH-KEY --> 粘贴id_rsa.pub中的内容；
     3. 验证： ssh -T git@github.com
         出现 Hi xxx! You've successfully authenticated, but GitHub does not provide shell access. 说明配置成功，可以连接上 Github
