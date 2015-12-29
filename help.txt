@@ -4,7 +4,9 @@ git init here            -- 创建本地仓库(repository)，将会在文件夹�
 git remote add origin git@github.com:wcf873455992/helloworld.git        
                          -- 把本地仓库和远程仓库关联起来。如果不执行这个命令的话，每次 push 的时候都需要指定远程服务器的地址
 git add                  -- 从本地仓库增删，结果将会保存到本机的缓存里面
-git rm
+git add -A      -- 将改动添加到本地仓库中
+git rm xxx      -- 从本地仓库中删除指定文件
+git rm -r xxx   -- 从本地仓库中删除指定文件夹
 git commit -m "注释"     -- 提交，把本机缓存中的内容提交到本机的 HEAD 里面
 git push origin master   -- 把本地的 commit(提交) push 到远程服务器上， origin 也就是之前 git remote add origin 那个命令里面的 origin，origin 替代了服务器仓库地址：git push git@github.com:winter1991/helloworld.git master
 git pull origin master   -- 从远程服务器 pull 新的改动
@@ -63,12 +65,7 @@ git pull origin master
 
 
 4. 提交本地修改到远程仓库中：
-git add
-git add -A      -- 将改动添加到本地仓库中
-git rm xxx      -- 从本地仓库中删除指定文件
-git rm -r xxx   -- 从本地仓库中删除指定文件夹
 
-git commit -m "注释"    -- 把本机缓存中的内容提交到本机的 HEAD 里面
 
 git push origin master      -- 把本地的 commit push 到远程仓库中
 
