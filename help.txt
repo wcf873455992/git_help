@@ -59,16 +59,6 @@ git init here       -- 创建本地仓库
 git remote add origin git@github.com:用户名/仓库名.git
                     -- 把本地仓库和远程仓库关联起来， 如果不执行这个命令的话，每次 push 的时候都需要指定远程服务器的地址
 
-                    
-3. 从远程仓库中下载新的改动：
-git pull origin master
-
-
-4. 提交本地修改到远程仓库中：
-
-
-git push origin master      -- 把本地的 commit push 到远程仓库中
-
 
 5. 使用 .gitignore 文件忽略指定的内容：
     1. 在本地仓库根目录创建 .gitignore 文件。Win7 下不能直接创建，可以创建 ".gitignore." 文件，后面的标点自动被忽略；
