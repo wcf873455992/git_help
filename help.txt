@@ -16,6 +16,19 @@ git pull origin master   -- 从远程服务器 pull 新的改动
 git status               -- 查看状态
 git add -A               -- 提交全部修改
 
+TAG 相关命令
+git tag         #查看当前分支下的标签
+git tag -a V3.05 -m “3.05 版本”     添加标签
+                                      #参数a即annotated的缩写，指定标签类型，后附标签名。
+                                      参数m指定标签说明，说明信息会保存在标签对象中。
+git tag -d V3.05              删除标签
+切换到标签
+git checkout V3.05 
+git show V3.05
+
+$ git push origin V3.05 # 将V3.05标签提交到git服务器
+$ git push origin –-tags # 将本地所有标签一次性提交到git服务器
+
 
 1. git 配置：
 git config --global user.name "xxx"      -- 配置用户名，上传本地 repository 到服务器上的时候，在 Github 上会显示这里配置的上传者信息
