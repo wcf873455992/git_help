@@ -22,6 +22,7 @@ git tag -a V3.05 -m “3.05 版本”     添加标签
                                       #参数a即annotated的缩写，指定标签类型，后附标签名。
                                       参数m指定标签说明，说明信息会保存在标签对象中。
 git tag -d V3.05              删除标签
+git push origin :V3.05        删除远程标签
 
 git checkout V3.05  切换到标签
 git show V3.05
